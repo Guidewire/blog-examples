@@ -1,0 +1,11 @@
+apiVersion: apps.example.com/v1
+kind: NginxApp
+metadata:
+  name: myapp1
+spec:
+  mainapp:
+    image: "bitnami/nginx:1.16-debian-9"
+    welcometext: "Hello from Main App!"
+  helperapp:
+    image: "bitnami/nginx:1.16-debian-9"
+    welcometext: "Hello from Helper App!"
